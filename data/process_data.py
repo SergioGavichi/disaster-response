@@ -11,8 +11,8 @@ def load_data(messages_filepath, categories_filepath):
     Returns:
         df - merged Pandas Dataframe of messages and categories data
     '''
-    messages = pd.read_csv('messages.csv', encoding='latin-1')
-    categories = pd.read_csv('categories.csv')
+    messages = pd.read_csv(messages_filepath, encoding='latin-1')
+    categories = pd.read_csv(categories_filepath)
     df = messages.merge(categories, on='id')
     return df
 
