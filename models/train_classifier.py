@@ -26,7 +26,7 @@ def load_data(database_filepath):
         category_names - list categories
     '''
     engine = create_engine('sqlite:///'+database_filepath)
-    df = pd.read_sql("SELECT * FROM Messages", engine)
+    df = pd.read_sql_table('Messages', engine)
     X = df.message.values
     Y = df.iloc[:,4:].values
     category_names = list(df.columns)[4:]
