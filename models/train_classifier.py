@@ -23,13 +23,13 @@ def load_data(database_filepath):
     Returns:
         X - Messages text
         Y - Messages categories
-        category_names - list categories
+        category_names - list of categories
     '''
     engine = create_engine('sqlite:///'+database_filepath)
     df = pd.read_sql_table('Messages', engine)
     X = df.message.values
     Y = df.iloc[:,4:].values
-    category_names = list(df.columns)[4:]
+    category_names = list(df.columns[4:])
     return X, Y, category_names
 
 def tokenize(text):
