@@ -9,9 +9,9 @@ Libraries used Scikit-Learn and nltk for NLP, sqlalchemy for SQL engine, Pandas 
 ### Project files structure
 ```
 app  
-|-- templates  
-|&emsp;|- master.html  # main page of web app  
-|&emsp;|- go.html  # classification result page of web app  
+|- templates  
+|  |- master.html  # main page of web app  
+|  |- go.html  # classification result page of web app  
 |- run.py  # Flask file that runs app  
 
 data  
