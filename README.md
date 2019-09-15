@@ -7,8 +7,8 @@ This is the repository for the Disaster Response Pipeline project of the Udacity
 Libraries used Scikit-Learn and nltk for NLP, sqlalchemy for SQL engine, Pandas for data manipulation and pickle.
 
 ### Project files structure
-app  
-|-- template  
+`app  
+|-- templates  
 |&emsp;|- master.html  # main page of web app  
 |&emsp;|- go.html  # classification result page of web app  
 |- run.py  # Flask file that runs app  
@@ -16,14 +16,14 @@ app
 data  
 |- disaster_categories.csv  # data to process  
 |- disaster_messages.csv  # data to process  
-|- process_data.py  
+|- process_data.py  # ETL pipeline code  
 |- DisasterResponse.db   # database to save clean data to  
 
 models  
-|- train_classifier.py  
+|- train_classifier.py  # ML pipeline code  
 |- disasterClassifier.pkl  # saved model  
 
-README.md
+README.md`
 
 ### Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
