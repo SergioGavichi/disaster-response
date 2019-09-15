@@ -2,7 +2,7 @@
 This is the repository for the Disaster Response Pipeline project of the Udacity Data Scientist NanoDegree.
 1. We first build an **ETL pipeline** `process_data.py` that loads, transforms and saves the data into a database file
 2. We then build an **ML pipeline** `train_classifier.py` that uses different transformers and a classifier optimized by a grid search
-3. We build a Flask web application (backend and frontend) to display graphs on training data and propose the user to enter text message to be classified.
+3. We build a **Flask web application** (backend and frontend) to display graphs on training data with plotly.js and propose the user to enter text message to be classified.
 
 Libraries used Scikit-Learn and nltk for NLP, sqlalchemy for SQL engine, Pandas for data manipulation and pickle.
 
